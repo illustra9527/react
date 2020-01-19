@@ -15,7 +15,7 @@
 但因時間不足，文件閱讀不夠詳細，所以對於如何props資料以及將資料帶入另外一個component中仍然一知半解的狀態，目前只完成度只有一半，若能再有多一點時間相信自己可以完成這個試題
 
 
-/* 
+
     Ref:
         圖表繪製：https://www.youtube.com/watch?v=Ly-9VTXJlnA
         官方文件：https://zh-hant.reactjs.org/docs/create-a-new-react-app.html
@@ -24,4 +24,3 @@
 
         
 
-*/

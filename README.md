@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+因工廠使用的系統架構過愈龐大，所以我將主題目標設定為做出一個商品銷貨表。
+其中要可輸入訂單資料後，以長條圖方式呈現並可以即時修正資料後重新渲染圖像。
 
-## Available Scripts
+在一開始我先找尋React各種教學文章以及官方文件，去了解React 如何表現渲染以及其大概架構
+原本預計藉由簡單的範例來實現功能（Todolist、小時鐘）加上 Chart.js 去呈現圖表資料
 
-In the project directory, you can run:
+雖然Todolist 是初學者範例，在閱讀完各式文件後發現時間關係，便先決定先產生圖表來呈現資料，以假資料先代替，再實現輸入變更的部分
 
-### `npm start`
+在完成圖表資料後，先嘗試用 input 方式把資料帶回 chartData中的Title 來先達成即時呈現效果
+並打算將資料以欄位固定方式，將資料props進去。
+多方嘗試過後仍然失敗，決定以form表單方式送出後再呈現資料。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+參考 bradtraversy/react_step_form的資料後，思考藉由該範例中的input頁以及在comfirm頁，來達到輸入後，獲取前面資料，接著再利用json格式或是設定變數，塞回chartData中，點下下一步渲染圖表。
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+但因時間不足，文件閱讀不夠詳細，所以對於如何props資料以及將資料帶入另外一個component中仍然一知半解的狀態，目前只完成度只有一半，若能再有多一點時間相信自己可以完成這個試題
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+/* 
+    Ref:
+        圖表繪製：https://www.youtube.com/watch?v=Ly-9VTXJlnA
+        官方文件：https://zh-hant.reactjs.org/docs/create-a-new-react-app.html
+        24 小時，React 快速入門：https://github.com/shiningjason/react-quick-tutorial
+        猴子也能看懂的 React 教學：https://github.com/j6qup3/j6qup3.github.io/tree/master/2016/08
 
-### `npm run build`
+        
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*/
